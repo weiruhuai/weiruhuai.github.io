@@ -1,11 +1,12 @@
 var timer = document.getElementById("time"), //进度条
-    wolfHoles = document.getElementById("wolfs"), //
+    wolfHoles = document.getElementById("wolfs"), //狼窝
     startBtn = document.getElementById("start"), //开始按钮
     endWord = document.getElementById("end"), //结束语
     reload = document.getElementById("reload"), //重新开始
     liftCircle = [0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0], //动画周期
     fraction = document.getElementById("fraction"),
     score = 0, 
+    flag = false;
     arrPos = [{ l: "98px", t: "115px" }, { l: "17px", t: "160px" }, { l: "15px", t: "221px" }, { l: "30px", t: "294px" }, { l: "122px", t: "274px" }, { l: "207px", t: "296px" }, { l: "200px", t: "212px" }, { l: "187px", t: "142px" }, { l: "100px", t: "192px" }];
     //绑定开始按钮事件
     startBtn.onclick = function() {
@@ -19,7 +20,6 @@ var timer = document.getElementById("time"), //进度条
                     endWord.innerHTML = "太厉害了!";
                 } else {
                     endWord.innerHTML = "game over!";
-
                 }
             } else {
                 timer.style.width = timer.offsetWidth - 9 > 0 ? timer.offsetWidth - 9 + "px" : "0px";
@@ -33,10 +33,6 @@ var timer = document.getElementById("time"), //进度条
             }
         }, 1000);
     }
-
-    reload.onclick = function() {
-        location.reload();
-    };
     //狼构建函数
     function createWolf() {
         var wolf = document.createElement("img");
@@ -84,3 +80,6 @@ var timer = document.getElementById("time"), //进度条
         type == "h" ? score += 10 : score -= 10;
         fraction.innerText = score;
     }
+    reload.onclick = function() {
+        location.reload();
+    };
