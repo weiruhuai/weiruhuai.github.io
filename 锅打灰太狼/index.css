@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+#outer{
+    background:url("game_bg.jpg") 0 0 no-repeat;
+    position: relative;
+    width: 320px;
+    height: 480px;
+    margin: 50px auto 0 auto;
+}
+
+#fraction{
+    position: absolute;
+    left: 65px;
+    top: 13px;
+    color: white;
+}
+
+#time{
+    position: absolute;
+    width: 180px;
+    height: 16px;
+    left: 63px;
+    top: 66px;
+    background: url("progress.png") 0 0 no-repeat;
+}
+#wolfs{
+    position: absolute;
+}
+#wolfs img{ 
+    position:absolute;
+}
+
+#startMenu{
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #C50000;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    margin-left: -75px;
+}
+
+#startMenu #start{
+    color: #eee;
+}
+
+#start,#endMenu,#reload{
+    line-height:50px; 
+    font-size:30px; 
+    font-weight:bold; 
+    display:block; 
+    text-decoration:none;
+}
+
+#endMenu{
+    position: absolute; 
+    width: 320px; 
+    text-align: center; 
+    color: #f00;
+    top: 200px; 
+    left: 0; 
+    display: none;
+}
+
+#reload{
+    display: none;
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    background:green;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    margin-left: -75px;
+}
