@@ -232,15 +232,12 @@ nav.navbar.navbar-default {
     height: 36px;
     background: url("../images/iconsprite_btbar.png") 8px 6px no-repeat;
     display: inline-block;
-    background-color: #444;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 4px;
     margin-bottom: 4px;
-   display: block;
     transition:color 1s;
 }
 #back-to-top a:hover{
-    /* color:#979797; */
     background-color: rgba(0, 0, 0, .8);
 }
 
